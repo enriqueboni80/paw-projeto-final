@@ -100,23 +100,28 @@ html, body {
   height: auto;
 }
 
-
-@media (min-width: 1200px){
-  .container {
-      width: 1000px;
+@media (min-width: 768px){
+    .container {
+      width: 750px;
   }
 }
+
 @media (min-width: 992px){
     .container {
       width: 970px;
   }
 }
 
-@media (min-width: 768px){
-    .container {
-      width: 750px;
+@media (min-width: 1200px){
+  .container {
+      width: 1000px;
   }
 }
+
+h1, h2, h3, h4, h5, h6, span{
+  font-family:'Raleway', sans-serif;
+}
+
 
 .container {
     padding-right: 15px;
@@ -161,6 +166,14 @@ p, a, li, label, input, blockquote, cite, div {
   padding-top: 8px;
 }
 
+#about .about-btn {
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  animation-delay: 1s;
+  text-align: center;
+}
+
 #about .about-btn .btn {
   margin: 7px 7px;
   background: #06A763;
@@ -171,3 +184,59 @@ p, a, li, label, input, blockquote, cite, div {
 .btn {
   padding-top: 8px;
 }
+
+.card .card-content p {
+  margin: 0;
+  color: inherit;
+  text-align: center;
+}
+
+#v-card-holder #v-card .info-headings h4 {
+  display: block;
+  width: 100%;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+
+#v-card-holder #v-card .infos .profile-list .content {
+  display: block;
+  margin-left: 30px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #fff;
+}
+
+.home-icone{
+  font-size: 20px;
+  color: white;
+}
+
+#v-card-holder #v-card .links .social {
+  margin-left: 12px;
+  margin-bottom: 4px;
+}
+
+#v-card-holder #v-card #profile .slant {
+  top: 0;
+  z-index: 1;
+  position: absolute;
+  border-style: solid;
+  border-width: 400px 0 0 100px;
+  border-color: rgba(223, 50, 50, 0) transparent transparent #06A763;
+}
+
+#v-card-holder #v-card .infos .profile-list .title {
+  display: block;
+  float: left;
+  color: #fff;
+  line-height: 29px;
+}
+
+h4 {
+  font-size: 2.18rem;
+  line-height: 110%;
+  margin: 1.14rem 0 0.912rem 0;
+}
+
