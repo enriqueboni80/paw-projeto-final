@@ -56,7 +56,6 @@ html, body {
   margin: -33px 3px 0 0;
 }
 
-
 #v-card-holder #v-card #profile {
   position: absolute;
   right: 0;
@@ -241,5 +240,90 @@ h4 {
 }
 
 .profile-list{
-  margin-bottom: 25px
+  margin-bottom: 15px
+}
+
+@media screen and (max-width: 990px){
+  #v-card-holder #v-card .info-headings {
+      max-width: 270px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #v-card-holder #v-card .card-content {
+      padding: 10px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #v-card-holder #v-card #profile {
+      position: absolute;
+      bottom: 85%;
+      left: 0;
+      width: 150px;
+      height: auto;
+      margin-right: auto;
+      margin-left: auto;
+      z-index: 1;
+      background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #v-card-holder #v-card #profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+}
+
+@media screen and (max-width: 767px){
+  #v-card-holder #v-card #profile .slant {
+      display: none;
+      opacity: 0;
+      overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #v-card-holder #v-card {
+      position: relative;
+      width: 100%;
+      overflow: visible;
+      z-index: 1;
+      top: 34px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #v-card-holder #v-card .info-headings h6 {
+      margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #v-card-holder #v-card .info-headings {
+      max-width: 100%;
+      text-align: center;
+      margin-top: 38px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #v-card-holder #v-card .infos {
+      display: table;
+      margin: 0 auto;
+      max-width: 100%;
+      padding: 0;
+  }
+}
+
+@media screen and (max-width: 767px){
+  #v-card-holder #v-card .links {
+      display: table;
+      max-width: 100%;
+      padding: 0;
+      margin: 0 auto 9px;
+  }
 }
