@@ -6,26 +6,121 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+  <!--====================== CSS EXTERNOS ===========================-->
+  <link rel="stylesheet" href="./css/vendors/normalize.css">
+  <link rel="stylesheet" href="./css/vendors/webfonts.css">
+  <link rel="stylesheet" href="./css/vendors/materialize.css">
+  <link rel="stylesheet" href="./css/vendors/bootstrap.min.css">
 
-  <link rel="stylesheet" href="css/normalize.css">
+  <!--==================== CSS CUSTOMIZADO ===========================-->
   <link rel="stylesheet" href="css/main.css">
-
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <header>
+    <nav>
+      <div class="header-background section"></div>
+    </nav>
+  </header>
+
+  <div id="v-card-holder" class="section" data-sr-id="50">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+
+          <div id="v-card" class="card">
+            <div id="profile" class="right">
+              <img alt="profile-image" class="img-responsive" src="images/profile/profile.png">
+              <div class="slant"></div>
+              <!--EMPTY PLUS BUTTON-->
+              <div class="btn-floating btn-large add-btn"><i class="material-icons">add</i></div>
+            </div>
+            <div class="card-content">
+              <!-- NAME & STATUS -->
+              <div class="info-headings">
+                <h4 class="text-uppercase left">John DOE</h4>
+                <h6 class="text-capitalize left">Software Engineer &amp; UI/UX Expert</h6>
+              </div>
+              <!-- INFO DE CONTATOS -->
+              <div class="infos">
+                <ul class="profile-list">
+                  <li class="clearfix">
+                    <span class="title"><i class="material-icons">email</i></span>
+                    <span class="content">email@mailprovider.com</span>
+                  </li>
+                  <li class="clearfix">
+                    <span class="title"><i class="material-icons">language</i></span>
+                    <span class="content">yourpersonalwebsite.com</span>
+                  </li>
+                  <li class="clearfix">
+                    <span class="title"><i class="fa fa-skype" aria-hidden="true"></i></span>
+                    <span class="content">yourusername@skype.com</span>
+                  </li>
+                  <li class="clearfix">
+                    <span class="title"><i class="material-icons">phone</i></span>
+                    <span class="content">+152 25634 254 846</span>
+                  </li>
+                  <li class="clearfix">
+                    <span class="title"><i class="material-icons">place</i></span>
+                    <span class="content">LampStreet 34/3, London, UK</span>
+                  </li>
+                </ul>
+              </div>
+              <!--LINKS-->
+              <div class="links">
+                <!-- LINKEDIN-->
+                <a href="#" class="social  btn-floating blue darken-3"><i class="fab fa-linkedin-in"></i></i></a>
+                <!-- RSS-->
+                <a href="#" class="social  btn-floating orange darken-3"><i class="fab fa-github"></i></a>
+                <!-- FACEBOOK-->
+                <a href="#" id="first_one" class="social btn-floating indigo"><i class="fab fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- DETALHES -->
+          <div id="about-card" class="card" data-sr-id="49">
+            <div class="card-content">
+              <!-- SOBRE -->
+              <p>
+                Hello! I’m John Doe. Senior Web Developer with over 13 years of experience
+                specializing in front end development. Experienced with all stages of the
+                development cycle for dynamic web projects.Having an in-depth knowledge
+                including advanced HTML5, CSS, CSS3, SASS, LESS, JSON, XML, Java, JavaScript,
+                JQuery, Angular JS. Strong background in management and leadership.
+              </p>
+            </div>
+            <!-- BUTTONS -->
+            <div id="about-btn" class="card-action">
+              <div class="about-btn">
+                <!-- DOWNLOAD CV BUTTON -->
+                <a href="#" class="btn waves-effect">Download CV</a>
+                <!-- CONTACT BUTTON -->
+                <a href="#contact" class="btn waves-effect">Contact Me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--<script src="js/vendor/modernizr-3.7.1.min.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
@@ -33,7 +128,7 @@
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
