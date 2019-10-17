@@ -19,9 +19,6 @@ body {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    position: relative;
-    padding-top: 15px;
-    padding-bottom: 30px;
 }
 
 .row {
@@ -171,7 +168,7 @@ div {
     margin-left: auto;
 }
 
-section {
+.section {
     position: relative;
     padding-top: 15px;
     padding-bottom: 30px;
