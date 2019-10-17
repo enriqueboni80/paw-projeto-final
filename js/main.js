@@ -9,6 +9,6 @@ function redirecionarPagina(pagina) {
         data: { "expression": "x" },
         cache: false
     }).done(function(retornoRequestPagina) {
-        $("#about-card > .card-content > p").html(retornoRequestPagina);
+        $("#about-card > .card-content").html(retornoRequestPagina);
     });
 }

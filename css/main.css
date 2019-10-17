@@ -195,7 +195,7 @@ div {
     margin: 7px 7px;
     background: #06A763;
     color: #fff;
-    width: 180px;
+    width: 167px;
     border-radius: 2px;
 }
 
@@ -277,4 +277,13 @@ h4 {
         padding: 0;
         margin: 0 auto 9px;
     }
+}
+
+a {
+    cursor: pointer;
+}
+
+#about-card .card-content img {
+    height: 100px;
+    padding: 10px;
 }
