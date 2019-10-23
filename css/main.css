@@ -198,6 +198,7 @@ div {
     width: 167px;
     border-radius: 2px;
     font-size: 14px;
+    line-height: normal;
 }
 
 .btn {
