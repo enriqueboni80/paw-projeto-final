@@ -83,9 +83,9 @@
                             </div>
                             <!--LINKS-->
                             <div class="links">
-                                <a href="https://www.linkedin.com/in/enrique-bonifacio/" class="social btn-floating blue darken-3"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://github.com/enriqueboni80" class="social btn-floating orange darken-3"><i class="fab fa-github"></i></a>
-                                <a href="https://www.facebook.com/enrique.bonifacio.5" id="first_one" class="social btn-floating indigo"><i class="fab fa-facebook-f"></i></a>
+                                <a target="_blank" href="https://www.linkedin.com/in/enrique-bonifacio/" class="social btn-floating blue darken-3"><i class="fab fa-linkedin-in"></i></a>
+                                <a target="_blank" href="https://github.com/enriqueboni80" class="social btn-floating orange darken-3"><i class="fab fa-github"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/enrique.bonifacio.5" id="first_one" class="social btn-floating indigo"><i class="fab fa-facebook-f"></i></a>
                             </div>
                         </div>
                     </div>
@@ -111,8 +111,8 @@
                                 <!-- DOWNLOAD CV BUTTON -->
                                 <a onclick="redirecionarPagina('sobre')" class="btn waves-effect">Sobre</a>
                                 <a onclick="redirecionarPagina('formacao')" class="btn waves-effect">Formação</a>
-                                <a onclick="redirecionarPagina('skills')" class="btn waves-effect">Skills</a>
-                                <a target="_blank" href="./files/enrique_bonifacio_leite_cv.pdf" class="btn waves-effect">DownloadCV
+                                <a onclick="redirecionarPagina('skills')" class="btn waves-effect">Skills / Portifolio</a>
+                                <a target="_blank" href="./files/enrique_bonifacio_leite_cv.pdf" class="btn waves-effect">Download CV
                                 </a>
                                 <a class="btn waves-effect" data-toggle="modal" data-target="#modalContato">Entre em
                                     Contato</a>
@@ -142,7 +142,11 @@
                         <div class="form-group">
                             <input type="email" class="form-control" id="inputFormEmail" placeholder="Insira seu email">
                         </div>
-                        <small id="emailHelp" class="form-text text-muted">Seu contato não será compartilhado</small>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Deixe sua mensagem</label>
+                            <textarea class="form-control" id="inputFormTextArea" rows="5"></textarea>
+                        </div>
+                        <small id="formHelp" class="form-text text-muted">Seu contato não será compartilhado</small>
                     </form>
                 </div>
                 <div class="modal-footer">

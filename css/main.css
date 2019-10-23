@@ -219,6 +219,28 @@ h4 {
     margin-bottom: 15px
 }
 
+.formacao-list {
+    margin-bottom: 25px
+}
+
+.formacao-list .instituicao {
+    font-size: 18px;
+    color: black
+}
+
+.formacao-list .logo-instituicao {
+    float: left;
+}
+
+.portifolio-title {
+    font-size: 20px
+}
+
+.portifolio-list {
+    margin-top: 10px;
+    margin-bottom: 25px
+}
+
 @media screen and (max-width: 990px) {
     #v-card-holder #v-card .info-headings {
         max-width: 270px;
@@ -277,6 +299,9 @@ h4 {
         max-width: 100%;
         padding: 0;
         margin: 0 auto 9px;
+    }
+    .formacao-item .logo-instituicao {
+        display: none
     }
 }
 
