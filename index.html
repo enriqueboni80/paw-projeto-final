@@ -114,7 +114,7 @@
                                 <a onclick="redirecionarPagina('skills')" class="btn waves-effect">Skills / Portifolio</a>
                                 <a target="_blank" href="./files/enrique_bonifacio_leite_cv.pdf" class="btn waves-effect">Download CV
                                 </a>
-                                <a class="btn waves-effect" data-toggle="modal" data-target="#modalContato">Entre em
+                                <a class="btn waves-effect" data-toggle="modal" data-target="#modal-contato">Entre em
                                     Contato</a>
                             </div>
                         </div>
@@ -125,7 +125,7 @@
     </section>
 
     <!-- Modal Contato -->
-    <div class="modal fade" id="modalContato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -140,7 +140,7 @@
                             <input type="text" class="form-control" id="inputFormName" placeholder="Insira seu nome">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control" id="inputFormEmail" placeholder="Insira seu email">
+                            <input type="text" class="form-control" id="inputFormEmail" placeholder="Insira seu email">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Deixe sua mensagem</label>
@@ -150,7 +150,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-cor-site">Enviar</button>
+                    <button onclick="enviarEmail()" type="button" class="btn btn-cor-site">Enviar</button>
                 </div>
             </div>
         </div>

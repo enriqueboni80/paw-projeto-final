@@ -181,6 +181,7 @@ div {
 
 .btn {
     padding-top: 8px;
+    line-height: normal;
 }
 
 #about .about-btn {
@@ -198,7 +199,6 @@ div {
     width: 167px;
     border-radius: 2px;
     font-size: 14px;
-    line-height: normal;
 }
 
 .btn {
@@ -317,4 +317,8 @@ a {
 
 .btn-cor-site {
     background: #06A763;
+}
+
+.form-error {
+    color: red;
 }
