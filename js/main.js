@@ -1,5 +1,6 @@
 $(document).ready(function() {
     redirecionarPagina("sobre")
+    $("#modal-consideracoes-iniciais").modal('show')
 })
 
 function redirecionarPagina(pagina) {
@@ -11,8 +12,6 @@ function redirecionarPagina(pagina) {
         $("#about-card > .card-content").html(retornoRequestPagina);
     });
 }
-
-//FORM
 
 String.prototype.isEmpty = function() {
     return (this.length === 0 || !this.trim());

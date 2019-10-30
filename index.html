@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="pt-br">
 
 <head>
     <meta charset="utf-8">
@@ -8,23 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
-
-
-    <!--====================== GOOGLE FONT ==========================-->
     <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
-
-
-    <!--====================== CSS EXTERNOS ===========================-->
     <link rel="stylesheet" href="./css/vendors/normalize.css">
     <link rel="stylesheet" href="./css/vendors/webfonts.css">
     <link rel="stylesheet" href="./css/vendors/materialize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-
-
-    <!--==================== CSS CUSTOMIZADO ===========================-->
     <link rel="stylesheet" href="css/main.css">
     <meta name="theme-color" content="#fafafa">
 </head>
@@ -33,29 +22,24 @@
 
     <header>
         <nav>
-            <div class="header-background section"></div>
+            <div class="header-background"></div>
         </nav>
     </header>
 
-    <section id="v-card-holder" data-sr-id="50" class="section">
+    <section id="v-card-holder" data-sr-id="50">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-
                     <div id="v-card" class="card">
                         <div id="profile" class="right">
                             <img alt="profile-image" class="img-responsive" src="images/perfil/perfil.jpg">
                             <div class="slant"></div>
-                            <!--EMPTY PLUS BUTTON-->
-                            <!--<div class="btn-floating btn-large add-btn"><i class="material-icons">add</i></div>-->
                         </div>
                         <div class="card-content">
-                            <!-- NAME & STATUS -->
                             <div class="info-headings">
                                 <h4 class="text-uppercase left">Enrique Bonifacio</h4>
                                 <h6 class="text-capitalize left">Analista &amp; Desenvolvedor Web</h6>
                             </div>
-                            <!-- INFO DE CONTATOS -->
                             <div class="infos">
                                 <ul class="profile-list">
                                     <li class="clearfix">
@@ -81,7 +65,6 @@
                                     </li>
                                 </ul>
                             </div>
-                            <!--LINKS-->
                             <div class="links">
                                 <a target="_blank" href="https://www.linkedin.com/in/enrique-bonifacio/" class="social btn-floating blue darken-3"><i class="fab fa-linkedin-in"></i></a>
                                 <a target="_blank" href="https://github.com/enriqueboni80" class="social btn-floating orange darken-3"><i class="fab fa-github"></i></a>
@@ -94,21 +77,22 @@
         </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <!-- DETALHES -->
                     <div id="about-card" class="card" data-sr-id="49">
                         <div class="card-content">
-                            Por algum motivo o ajax não está rodando no seu navegador. veja: <a href="https://www.chromestatus.com/feature/5629709824032768">
-                                https://www.chromestatus.com/feature/5629709824032768</a></br>
-                            Tente rodar localmente via IE, ou Instale o projeto em algum servidor WEB, ou acesse: <a href="https://planetanerd.com.br/projeto-final">https://planetanerd.com.br/projeto-final</a>
+                            <p>Por algum motivo o ajax não está rodando no seu navegador. veja: <a href="https://www.chromestatus.com/feature/5629709824032768">
+                                    https://www.chromestatus.com/feature/5629709824032768</a></p>
+                            <p>Tente rodar localmente via IE, ou Instale o projeto em algum servidor WEB, ou acesse:
+                                <a href="https://planetanerd.com.br/projeto-final">https://planetanerd.com.br/curriculo</a>
+                            </p>
+                            <p><strong>NÃO AVALIE SEM VER O PROJETO RODANDO PORQUE EXISTEM EXPLICAÇÕES IMPORTANTES NO
+                                    CONTEUDO DO PROJETO</strong></p>
                         </div>
-                        <!-- BUTTONS -->
                         <div id="about-btn" class="card-action">
                             <div class="about-btn">
-                                <!-- DOWNLOAD CV BUTTON -->
                                 <a onclick="redirecionarPagina('sobre')" class="btn waves-effect">Sobre</a>
                                 <a onclick="redirecionarPagina('formacao')" class="btn waves-effect">Formação</a>
                                 <a onclick="redirecionarPagina('skills')" class="btn waves-effect">Skills /
@@ -145,10 +129,12 @@
                             <input type="text" class="form-control" id="inputFormEmail" placeholder="Insira seu email">
                         </div>
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Deixe sua mensagem</label>
+                            <label for="inputFormTextArea">Deixe sua mensagem</label>
                             <textarea class="form-control" id="inputFormTextArea" rows="5"></textarea>
                         </div>
                         <small id="formHelp" class="form-text text-muted">Seu contato não será compartilhado</small>
+                        <strong id="" class="form-text text-muted">PARA FIM DE EXERCICIO - SALVANDO EM
+                            LOCALSTORAGE</strong>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -158,7 +144,36 @@
         </div>
     </div>
 
-    <!--<script src="js/vendor/modernizr-3.7.1.min.js"></script>-->
+    <!-- Modal Considerações iniciais -->
+    <div class="modal fade" id="modal-consideracoes-iniciais" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Considerações Iniciais</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Antes de começarmos que é importante saber:
+                    <ul>
+                        <li>• Esse site é um trabalho da pós-gradução da PucMinas da disciplina de Padroes Web ministrada pelo professor Kutova (2/2019)</li>
+                        <li>• Tecnologia Utilizadas: HTML, CSS, JAVASCRIPT, JQUERY, BOOSTRAP, AJAX e GIT</li>
+                        <li>• Apesar de ser uma SPA, as três paginas exigidas como requisito são dinamicamente carregadas via AJAX</li>
+                        <li>• Como requisito do trabalho o contact form do site esta salvando em Local Storage</li>
+                        <li>• Repo Git desse projeto: <a target="_blank" href="https://github.com/enriqueboni80/paw-projeto-final">https://github.com/enriqueboni80/paw-projeto-final</a>
+                        </li>
+                        <li>
+                            • Referências utilizadas: <a target="_blank" href="https://html5boilerplate.com/">boilerplate</a> e o template
+                            <a target="_blank" href="http://trimatrixlab.com/store/flatrica/index-normal.html#">Flatrica</a> encontrado em <a target="_blank" href="https://themeforest.net/">https://themeforest.net/</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
